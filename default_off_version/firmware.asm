@@ -68,7 +68,7 @@ main:
     
 main_loop:
 
-    jnb     int0, main_loop_on
+    jb      int0, main_loop_on
 main_loop_off:
     jnb     p5_5, main_loop_continue
     clr     p5_5        ; turn on 230v
